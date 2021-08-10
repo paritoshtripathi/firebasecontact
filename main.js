@@ -1,13 +1,29 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
-var config = {
-  apiKey: "xxxxx",
-  authDomain: "xxxxx",
-  databaseURL: "xxxxx",
-  projectId: "xxxxx",
-  storageBucket: "xxxxx",
-  messagingSenderId: "xxxxx"
+// var config = {
+//   apiKey: "xxxxx",
+//   authDomain: "xxxxx",
+//   databaseURL: "xxxxx",
+//   projectId: "xxxxx",
+//   storageBucket: "xxxxx",
+//   messagingSenderId: "xxxxx"
+// };
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+var firebaseConfig = {
+  apiKey: "AIzaSyBEOKxdIXjneUVeL84upFHSKyKEQxPrR_I",
+  authDomain: "skdemocontact.firebaseapp.com",
+  projectId: "skdemocontact",
+  storageBucket: "skdemocontact.appspot.com",
+  messagingSenderId: "549937671672",
+  appId: "1:549937671672:web:0d9838af88cc830e2b3a0d",
+  measurementId: "G-YQM998Y3LC",
+  databaseURL: "https://skdemocontact-default-rtdb.asia-southeast1.firebasedatabase.app"
 };
-firebase.initializeApp(config);
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+//firebase.initializeApp(config);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
